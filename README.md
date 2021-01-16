@@ -14,18 +14,18 @@ Commit your code regularly and meaningfully. This helps you and any collaborator
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Use CRA to create a new React app in this repository
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository in your terminal
+- [x ] Use CRA to create a new React app in this repository
+- [x ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into main (student's Repository). **Please don't merge your own pull request**
-- [ ] From the home page of your repo, make sure you have your branch selected
-- [ ] Copy the URL and paste it into Canvas
+- [x ] Submit a Pull-Request to merge <firstName-lastName> Branch into main (student's Repository). **Please don't merge your own pull request**
+- [ x] From the home page of your repo, make sure you have your branch selected
+- [ x] Copy the URL and paste it into Canvas
 
 ### Task 2: Minimum Viable Product
 
@@ -43,7 +43,7 @@ When you have those completed, you're ready to start coding!
 
 #### Fetch the User Data
 
-- When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
+- When your component mounts, send a GET request to the following URL (replacing the placeholder with your Github name):
   - https://api.github.com/users/[your-username]
 - After you fetch your data, set it to state
 
@@ -73,7 +73,7 @@ Now that you have completed the MVP, I want you to think about the process it to
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- Build a form that allows you to search for different Github users. When the form is submitted, use `componentDidUpdate` to fetch the data for the user you typed in. Set that new user's data to state to trigger the component to rerender and display your new user. Don't forget to fetch their followers as well.
+- Build a form that allows you to search for different Github users. When the form is submitted, use `componentDidUpdate` to fetch the data for the user you typed in. Set that new user's data to state to trigger the component to re-render and display your new user. Don't forget to fetch their followers as well.
 
 - Look into adding your GitHub contribution graph. There are a number of different ways of doing this, this Stack Overflow discussion will get you started: https://stackoverflow.com/questions/34516592/embed-github-contributions-graph-in-website
 
