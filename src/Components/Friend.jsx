@@ -1,14 +1,14 @@
 import React from 'react'
 
 function Friend(props){
-
+const {user}= props
 
   
     return(
      <>
-    {props.followers.map((friend) =>{
+    {props.user.map(() =>{
       return  <div>
-        <img src={friend} alt="human"/>
+        <img src={user.avatar_url} alt="human"/>
         {/* <p>Following: {friend.}</p> */}
       </div>
     })}

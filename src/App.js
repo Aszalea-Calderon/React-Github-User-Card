@@ -1,24 +1,29 @@
 import React from "react";
 import axios from "axios";
 import Friend from "./Components/Friend";
+import User from "./Components/User";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: {},
-      followers: [],
-      following: [],
+      user: {},
+      // followers: [],
+      // following: [],
     };
   }
 
+  //Setting up the first mount
   componentDidMount() {
+    // this.fetchUser('aszalea-calderon')
+    // this.fetchFollow('aszalea-calderon')
+    // this.fetchRepos('aszalea-calderon')
     axios
       .get(`https://api.github.com/users/aszalea-calderon`)
       .then((res) => {
         console.log(`Data`, res);
 
-        this.setState({ followers: res });
+        this.setState({ user: res.data });
       })
       .catch((err) => console.error(`My Error`, err));
   }
@@ -26,10 +31,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.followers.length === 0 ? (
+        {this.state.user.length === 0 ? (
           <h1>Sorting all your awesome friends... Please wait...</h1>
         ) : (
-          <Friend followers={this.state.followers} />
+          <User user={this.state.user} />
           // <h1>Sort</h1>
         )}
       </div>
