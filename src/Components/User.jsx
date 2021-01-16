@@ -10,7 +10,7 @@ const {user} = props
       <h1>{user.login}</h1>
       <p>Location: {user.location}</p>
       <p>Followers: {user.followers}</p>
-      <p>Following:{user.following}</p>
+      <p>Following: {user.following}</p>
 
     </div>
   )
