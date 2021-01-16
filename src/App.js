@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-//import Friend from "./Components/Friend";
+import Friend from "./Components/Friend";
 
 class App extends React.Component {
   constructor() {
@@ -29,8 +29,8 @@ class App extends React.Component {
         {this.state.followers.length === 0 ? (
           <h1>Sorting all your awesome friends... Please wait...</h1>
         ) : (
-          // <Friend followers={this.state.followers} />
-          <h1>Sort</h1>
+          <Friend followers={this.state.followers} />
+          // <h1>Sort</h1>
         )}
       </div>
     );

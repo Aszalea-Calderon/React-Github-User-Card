@@ -6,12 +6,12 @@ function Friend(props){
   
     return(
      <>
-    {/* {props.followers.map((friend) =>{ */}
-       <div>
+    {props.followers.map((friend) =>{
+      return  <div>
         <img src={friend} alt="human"/>
         {/* <p>Following: {friend.}</p> */}
       </div>
-    
+    })}
     </>
     
    
