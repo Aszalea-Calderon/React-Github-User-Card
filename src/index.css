@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Righteous&display=swap");
+/* font-family: 'Barlow', sans-serif; -- Small one
+font-family: 'Righteous', cursive;  -- Big One */
+
+body {
+  margin: 0;
+  border: 8px black solid;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Nav Bar */
+.blueBar {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(79, 67, 182),
+    rgb(52, 33, 175)
+  );
+  /* background-color: #2b31b7; */
+}
+.mainHeader {
+  width: 80%;
+  color: #ffffff;
+  font-family: "Righteous", cursive;
+  padding: 2%;
+}
+.searchBar {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: ; */
+}
+
+.searchHeader {
+  margin-top: 15%;
+  color: white;
+  font-family: "Barlow", sans-serif;
+}
+input {
+  margin-top: 14%;
+  height: 20%;
+}
